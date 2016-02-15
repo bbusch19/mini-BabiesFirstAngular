@@ -8,8 +8,8 @@
   <body>
 
     <h1>My Friends</h1>
-    <input placeholder="enter a name"/>
-    <button>Add Friend</button>
+    <input placeholder="enter a name" ng-model="newFriend"/>
+    <button ng-click="addFriend()">Add Friend</button>
     <div ng-repeat="friend in friends">
       <p>
         {{friend}}
